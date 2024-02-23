@@ -84,7 +84,7 @@ class Section3:
 
         answer = {}
 
-        Xtrain_3a1, ytrain_3a1, Xtest_3a1, ytest_3a1 = nu.prepare_custom_data(10000, 2000)
+        # Xtrain_3a1, ytrain_3a1, Xtest_3a1, ytest_3a1 = nu.prepare_custom_data(10000, 2000)
 
         # Initialize the ShuffleSplit cross-validator
         shuffle_split = ShuffleSplit(n_splits=5, random_state=42)
@@ -259,7 +259,7 @@ class Section3:
             u.print_cv_result_dict(scores)
             return scores
 
-        X, y, Xtest, ytest = u.prepare_data()
+       # X, y, Xtest, ytest = u.prepare_data()
         Xtrain, ytrain = nu.filter_imbalanced_7_9s(X, y)
         Xtest, ytest = nu.filter_imbalanced_7_9s(Xtest, ytest)
 
@@ -346,7 +346,7 @@ class Section3:
             u.print_cv_result_dict(scores)
             return scores
 
-        X, y, Xtest, ytest = u.prepare_data()
+       # X, y, Xtest, ytest = u.prepare_data()
         Xtrain, ytrain = nu.filter_imbalanced_7_9s(X, y)
         Xtest, ytest = nu.filter_imbalanced_7_9s(Xtest, ytest)
     
